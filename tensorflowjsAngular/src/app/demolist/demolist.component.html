@@ -1,0 +1,9 @@
+<div *ngFor="let demo of demos; index as demoId">
+
+  <h3>
+    <a [title]="demo.name + ' details'"  [routerLink]="['/demo1']"> <!-- [routerLink]="['/demos', demoId]"-->
+      {{ demo.name }}
+    </a>
+  </h3>
+<!-- . . . -->
+</div>
